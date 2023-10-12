@@ -18,6 +18,7 @@ a2.displayData();
 
 */
 
+
 testApp2.Auto a3 = new testApp2.Auto("Ferrari", "LaFerrari", "Rossa", testApp2.Auto.motori.diesel, 20);
 
 char choise = ' ';

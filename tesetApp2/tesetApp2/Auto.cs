@@ -72,7 +72,7 @@ class Auto
         this.isOn = false;
     }
 
-
+    #region "display"
 
     public void displayData()
     {
@@ -129,6 +129,8 @@ class Auto
         Console.WriteLine(result);
     }
 
+    #endregion
+    #region "azioni"
     /// <summary>
     /// Accende il veicolo, se il carburante è pari a 0, allora non lo accende
     /// </summary>
@@ -175,7 +177,7 @@ class Auto
     {
         int tempFuel;
         Console.WriteLine("\n Insert the level of desired fuel: ");
-        tempFuel = Convert.ToInt32(Console.ReadLine());
+tempFuel = Convert.ToInt32(Console.ReadLine());
 
         while (tempFuel < 0 || tempFuel > 100)
         {
@@ -194,5 +196,5 @@ class Auto
 
     }
 
-
+    #endregion
 }
