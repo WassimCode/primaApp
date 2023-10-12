@@ -1,4 +1,6 @@
-﻿/*App: Gestione Automobili
+﻿/*
+ 
+App: Gestione Automobili
 
 L'app deve modellare un'automibile per farlo deve registrare le informazioni relative a:
 - marca
@@ -22,7 +24,8 @@ class Auto{
     {
         benzina,
         diesel,
-        elettrico
+        elettrico,
+        indefinito
     }
 
     //  Proprietà
@@ -35,7 +38,7 @@ class Auto{
         this.marca = "";
         this.modello= "";
         this.colore = "";
-        this.tipoMotore = motori.benzina;
+        this.tipoMotore = motori.indefinito;
     }
 
     public Auto(string marca, string modello, string colore,  motori tipoMotore) {
@@ -51,8 +54,33 @@ class Auto{
         Console.WriteLine("modello : " + this.modello);
         Console.WriteLine("colore :" + this.colore);
         Console.WriteLine("tipoMotore: "+  this.tipoMotore);
-        Console.WriteLine("\n___________________\n");
+        Console.WriteLine("\n-------------------\n");
+
     }
+
+    /*
+     * 
+    public void displayData()
+    {
+        generaData();    
+    }
+     
+    public string generaData(){
+        
+        string result = "";
+
+        result += "\nMarca : " + this.marca;
+        
+        result += "\nmodello : " + this.modello;
+        
+        result += "\ncolore :" + this.colore;
+      
+        result += "\ntipoMotore: "+  this.tipoMotore;
+
+        return result;
     
+    }
+     */
+
 
 }
