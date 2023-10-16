@@ -16,18 +16,19 @@ class Auto
     //  Proprietà
 
     /// <summary>
-    /// marca del veicolo
+    /// proprietà del veicolo
     /// </summary>
-    public string marca;
-    public string modello;
-    public string colore;
-    public motori tipoMotore;
+    protected string marca;
+    protected string modello;
+    protected string colore;
+    protected motori tipoMotore;
+    protected const int maxFuelLevel = 100;
 
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
     /// </summary>
-    public bool isOn;
-    public int fuel;
+    protected bool isOn;
+    protected int fuel;
 
     /// <summary>
     /// Crea il costruttore
@@ -177,13 +178,13 @@ class Auto
     {
         int tempFuel;
         Console.WriteLine("\n Insert the level of desired fuel: ");
-tempFuel = Convert.ToInt32(Console.ReadLine());
+        tempFuel = Convert.ToInt32(Console.ReadLine());
 
-        while (tempFuel < 0 || tempFuel > 100)
+        while (tempFuel < 0 || tempFuel > maxFuelLevel)
         {
-            if (tempFuel < 0 || tempFuel > 100)
+            if (tempFuel < 0 || tempFuel > maxFuelLevel)
             {
-                Console.WriteLine("\n Error, reinsert fuel level between 0 and 100.");
+                Console.WriteLine("\n Error, reinsert fuel level between 0 and " + maxFuelLevel +".");
 
             }
             Console.WriteLine("\n Insert the level of desired fuel: ");
@@ -199,91 +200,57 @@ tempFuel = Convert.ToInt32(Console.ReadLine());
             this.turnOff();
         }
 
-    }
-
-    /// <summary>
-    /// Menu dell'applicazione
-    /// Prende un int e con lo switch case aziona i vari metodi selezionati da utente
-    /// Ciclo do while con guardia, con l'uscita con l'inserimento del numero 0
+    }    /// <summary>
+    /// Aggiunta dinamica del livello di carburante, sommata a quella già presente
     /// </summary>
-    public void menu()
+    public void addFuelLevel(int addedFuel)
     {
-        // variabile di controllo
-        int choise;
-
-        // ciclo do while
-        do
+        if (addedFuel > 0)
         {
-            Console.Clear();
-            Console.WriteLine("Menu for " + this.marca + " " + this.modello + ":\n_________________________\n");
-            Console.WriteLine("\n 1) Change fuel level.");
-            Console.WriteLine("\n 2) Turn on.");
-            Console.WriteLine("\n 3) Turn off.");
-            Console.WriteLine("\n 4) Show details.");
-            Console.WriteLine("\n 5) Show state.");
-            Console.WriteLine("\n 0) Exit.");
-            // converto la stringa di readline in intero
-            choise = Convert.ToInt32(Console.ReadLine());
-            
-            switch (choise)
+            this.fuel += addedFuel;
+            if (this.fuel > maxFuelLevel)
             {
-                // Cambia il livello di carburante
-                case 1:
-                    Console.Clear();
-                    this.changeFuelLevel();
-                    break;
-                // Accendi il veicolo, dopo i dovuti controlli
-
-                case 2:
-                    Console.Clear();
-
-                    this.turnOn();
-                    Console.WriteLine("\nPress enter to go back to the menu...");
-                    Console.ReadLine();
-                    break;
-                // Spegni il veicolo, dopo i dovuti controlli
-
-                case 3:
-                    Console.Clear();
-
-                    this.turnOff();
-                    Console.WriteLine("\nPress enter to go back to the menu...");
-                    Console.ReadLine();
-                    break;
-                // Mostra i dettagli completi del veicolo
-
-                case 4:
-                    Console.Clear();
-
-                    this.displayData();
-                    Console.WriteLine("\nPress enter to go back to the menu...");
-                    Console.ReadLine();
-                    break;
-
-                // Mostra lo stato di accensione del veicolo
-
-                case 5:
-                    Console.Clear();
-
-                    this.showState();
-                    Console.WriteLine("\nPress enter to go back to the menu...");
-                    Console.ReadLine();
-                    break;
-
-                // Uscita dal menu
-
-                case 0:
-                    Console.Clear();
-                    Console.WriteLine("\nClosed with success!");
-
-                    break;
-                default:
-
-                    Console.Clear();
-                    break;
+                this.fuel = maxFuelLevel;
+                Console.WriteLine("\n Tank filled completly!");
             }
-        } while (choise != 0);
+            else
+            {
+                Console.WriteLine("\n The new level of fuel is " + this.fuel +".");
+            }
+        }
+       
+
+    } 
+    
+    protected int addCustomFuelLevel()
+    {
+        int tempFuel;
+        Console.WriteLine("\n Insert the level of desired added fuel: ");
+        tempFuel = Convert.ToInt32(Console.ReadLine());
+
+        while (tempFuel < 0 || tempFuel > maxFuelLevel)
+        {
+            if (tempFuel < 0 || this.fuel > maxFuelLevel)
+            {
+                Console.WriteLine("\n Error, reinsert fuel level between 0 and " + maxFuelLevel + ".");
+
+            }
+            Console.WriteLine("\n Insert the level of desired added fuel: ");
+            tempFuel = Convert.ToInt32(Console.ReadLine());
+
+
+        }
+
+        return tempFuel;
     }
+    
+ 
+       
+
+    
+
+
+
 
     #endregion
 }
