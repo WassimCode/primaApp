@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 
 namespace testApp2;
 
@@ -194,6 +194,75 @@ tempFuel = Convert.ToInt32(Console.ReadLine());
         this.fuel = tempFuel;
         Console.WriteLine("\n Your new level is " + this.fuel);
 
+        if (this.fuel == 0)
+        {
+            this.turnOff();
+        }
+
+    }
+
+
+    public void menu()
+    {
+
+        int choise;
+
+        do
+        {
+            Console.Clear();
+            Console.WriteLine("Menu for " + this.marca + " " + this.modello + ":\n");
+            Console.WriteLine("\n 1) Change fuel level.");
+            Console.WriteLine("\n 2) Turn on.");
+            Console.WriteLine("\n 3) Turn off.");
+            Console.WriteLine("\n 4) Show details.");
+            Console.WriteLine("\n 5) Show state.");
+            Console.WriteLine("\n 0) Exit.");
+            choise = Convert.ToInt32(Console.ReadLine());
+            switch (choise)
+            {
+                case 1:
+                    Console.Clear();
+                    this.changeFuelLevel();
+                    break;
+                case 2:
+                    Console.Clear();
+
+                    this.turnOn();
+                    Console.WriteLine("\nPress enter to go back to the menu...");
+                    Console.ReadLine();
+                    break;
+                case 3:
+                    Console.Clear();
+
+                    this.turnOff();
+                    Console.WriteLine("\nPress enter to go back to the menu...");
+                    Console.ReadLine();
+                    break;
+                case 4:
+                    Console.Clear();
+
+                    this.displayData();
+                    Console.WriteLine("\nPress enter to go back to the menu...");
+                    Console.ReadLine();
+                    break;
+                case 5:
+                    Console.Clear();
+
+                    this.showState();
+                    Console.WriteLine("\nPress enter to go back to the menu...");
+                    Console.ReadLine();
+                    break;
+                case 0:
+                    Console.Clear();
+                    Console.WriteLine("\nClosed with success!");
+
+                    break;
+                default:
+
+                    Console.Clear();
+                    break;
+            }
+        } while (choise != 0);
     }
 
     #endregion
