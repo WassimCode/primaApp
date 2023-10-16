@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace testApp2
 {
-    internal class AutoInterattiva : testApp2.Auto
+    public class AutoInterattiva : testApp2.Auto
     {
         public AutoInterattiva()
         {

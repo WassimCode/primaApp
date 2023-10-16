@@ -10,6 +10,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "El
 		Auto.cs = Auto.cs
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAuto", "TestAuto\TestAuto.csproj", "{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -20,6 +22,10 @@ Global
 		{1E5BC9E1-3BF3-463D-9F82-2B6A97D9E0D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E5BC9E1-3BF3-463D-9F82-2B6A97D9E0D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E5BC9E1-3BF3-463D-9F82-2B6A97D9E0D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

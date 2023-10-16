@@ -2,7 +2,7 @@
 
 namespace testApp2;
 
-class Auto
+public class Auto
 {
     // Tipi personlizzati
     public enum motori
@@ -30,6 +30,8 @@ class Auto
     protected bool isOn;
     protected int fuel;
 
+    public int storedInAccountFuel = 0;
+
     /// <summary>
     /// Crea il costruttore
     /// </summary>
@@ -48,12 +50,9 @@ class Auto
     /// <param name="modello"></param>
     /// <param name="colore"></param>
     /// <param name="tipoMotore"></param>
-    public Auto(string marca, string modello, string colore, motori tipoMotore)
+    public Auto(string marca, string modello, string colore, motori tipoMotore) : this(marca, modello, colore, tipoMotore, 0)
     {
-        this.marca = marca;
-        this.modello = modello;
-        this.colore = colore;
-        this.tipoMotore = tipoMotore;
+        
     }
     /// <summary>
     /// Crea il costruttore, con parametri, della classe Auto
@@ -97,6 +96,8 @@ class Auto
 
         result += "\nFuel: " + this.fuel;
 
+        result += "\nSaved in account fuel: " + this.storedInAccountFuel;
+
 
         if (this.isOn)
         {
@@ -128,6 +129,24 @@ class Auto
         }
 
         Console.WriteLine(result);
+    }
+
+    public string showStateOut()
+    {
+
+        string result = "";
+
+
+        if (this.isOn)
+        {
+            result += "\nTurned on.";
+        }
+        else
+        {
+            result += "\nTurned off";
+        }
+
+        return result;
     }
 
     #endregion
@@ -210,12 +229,13 @@ class Auto
             this.fuel += addedFuel;
             if (this.fuel > maxFuelLevel)
             {
+                this.storedInAccountFuel = returnPlusFuel(this.fuel);
                 this.fuel = maxFuelLevel;
                 Console.WriteLine("\n Tank filled completly!");
             }
             else
             {
-                Console.WriteLine("\n The new level of fuel is " + this.fuel +".");
+                Console.WriteLine("\n The new level of fuel is " + this.fuel + ".");
             }
         }
        
@@ -230,7 +250,7 @@ class Auto
 
         while (tempFuel < 0 || tempFuel > maxFuelLevel)
         {
-            if (tempFuel < 0 || this.fuel > maxFuelLevel)
+            if (tempFuel < 0 || tempFuel > maxFuelLevel)
             {
                 Console.WriteLine("\n Error, reinsert fuel level between 0 and " + maxFuelLevel + ".");
 
@@ -245,7 +265,11 @@ class Auto
     }
     
  
-       
+    private int returnPlusFuel(int insertedFuel)
+    {
+        return insertedFuel - maxFuelLevel;
+
+    }
 
     
 
