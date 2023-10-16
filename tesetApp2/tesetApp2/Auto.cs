@@ -201,29 +201,39 @@ tempFuel = Convert.ToInt32(Console.ReadLine());
 
     }
 
-
+    /// <summary>
+    /// Menu dell'applicazione
+    /// Prende un int e con lo switch case aziona i vari metodi selezionati da utente
+    /// Ciclo do while con guardia, con l'uscita con l'inserimento del numero 0
+    /// </summary>
     public void menu()
     {
-
+        // variabile di controllo
         int choise;
 
+        // ciclo do while
         do
         {
             Console.Clear();
-            Console.WriteLine("Menu for " + this.marca + " " + this.modello + ":\n");
+            Console.WriteLine("Menu for " + this.marca + " " + this.modello + ":\n_________________________\n");
             Console.WriteLine("\n 1) Change fuel level.");
             Console.WriteLine("\n 2) Turn on.");
             Console.WriteLine("\n 3) Turn off.");
             Console.WriteLine("\n 4) Show details.");
             Console.WriteLine("\n 5) Show state.");
             Console.WriteLine("\n 0) Exit.");
+            // converto la stringa di readline in intero
             choise = Convert.ToInt32(Console.ReadLine());
+            
             switch (choise)
             {
+                // Cambia il livello di carburante
                 case 1:
                     Console.Clear();
                     this.changeFuelLevel();
                     break;
+                // Accendi il veicolo, dopo i dovuti controlli
+
                 case 2:
                     Console.Clear();
 
@@ -231,6 +241,8 @@ tempFuel = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("\nPress enter to go back to the menu...");
                     Console.ReadLine();
                     break;
+                // Spegni il veicolo, dopo i dovuti controlli
+
                 case 3:
                     Console.Clear();
 
@@ -238,6 +250,8 @@ tempFuel = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("\nPress enter to go back to the menu...");
                     Console.ReadLine();
                     break;
+                // Mostra i dettagli completi del veicolo
+
                 case 4:
                     Console.Clear();
 
@@ -245,6 +259,9 @@ tempFuel = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("\nPress enter to go back to the menu...");
                     Console.ReadLine();
                     break;
+
+                // Mostra lo stato di accensione del veicolo
+
                 case 5:
                     Console.Clear();
 
@@ -252,6 +269,9 @@ tempFuel = Convert.ToInt32(Console.ReadLine());
                     Console.WriteLine("\nPress enter to go back to the menu...");
                     Console.ReadLine();
                     break;
+
+                // Uscita dal menu
+
                 case 0:
                     Console.Clear();
                     Console.WriteLine("\nClosed with success!");
