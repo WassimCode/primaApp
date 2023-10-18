@@ -111,9 +111,14 @@ namespace testApp2
                         break;
                      case 8:
                         Console.Clear();
-                        Console.WriteLine("By how many km/h do you want to accelerate?");
-                        int speedUp = Int32.Parse(Console.ReadLine());
-                        this.accelera(speedUp);
+                        if (this.isOn)
+                        {
+                            Console.WriteLine("By how many km/h do you want to accelerate?");
+                            int speedUp = Int32.Parse(Console.ReadLine());
+                            this.accelera(speedUp);
+                        }
+                        else
+                            Console.WriteLine("Car engine is off, turn the car on first!");
                         Console.WriteLine("\nPress enter to go back to the menu...");
 
                         Console.ReadLine();
@@ -121,9 +126,14 @@ namespace testApp2
                         break;
                      case 9:
                         Console.Clear();
-                        Console.WriteLine("By how many km/h do you want to decelerate?");
-                        int slowDown = Int32.Parse(Console.ReadLine());
-                        this.rallenta(slowDown);
+                        if (this.isOn)
+                        {
+                            Console.WriteLine("By how many km/h do you want to accelerate?");
+                            int slowDown = Int32.Parse(Console.ReadLine());
+                            this.rallenta(slowDown);
+                        }
+                        else
+                            Console.WriteLine("Car engine is off, turn the car on first!");
                         Console.WriteLine("\nPress enter to go back to the menu...");
 
                         Console.ReadLine();

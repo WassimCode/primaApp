@@ -28,7 +28,7 @@ public class Auto
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
     /// </summary>
-    protected bool isOn;
+    public bool isOn;
     protected int fuel;
 
     public int storedInAccountFuel = 0;
