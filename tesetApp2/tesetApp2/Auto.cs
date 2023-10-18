@@ -23,6 +23,7 @@ public class Auto
     protected string colore;
     protected motori tipoMotore;
     protected const int maxFuelLevel = 100;
+    protected int speed;
 
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
@@ -279,7 +280,10 @@ public class Auto
     }
 
     
+    public void accelera(int amount)
+    {
 
+    }
 
 
 
