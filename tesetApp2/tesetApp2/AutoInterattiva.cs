@@ -114,12 +114,16 @@ namespace testApp2
                         Console.WriteLine("By how many km/h do you want to accelerate?");
                         int speedUp = Int32.Parse(Console.ReadLine());
                         this.accelera(speedUp);
+                        Console.ReadLine();
+
                         break;
                      case 9:
                         Console.Clear();
-                        Console.WriteLine("By how many km/h do you want to accelerate?");
+                        Console.WriteLine("By how many km/h do you want to decelerate?");
                         int slowDown = Int32.Parse(Console.ReadLine());
-                        this.accelera(slowDown);
+                        this.rallenta(slowDown);
+                        Console.ReadLine();
+
                         break;
                     // Uscita dal menu
 

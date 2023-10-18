@@ -276,6 +276,7 @@ public class Auto
     /// <summary>
     ///  metodo che rallenta la velocità del veicolo, effettua anche i controlli del caso
     /// </summary>
+    /// <param name="amount"></param>
     public void rallenta(int amount)
     {
         try
