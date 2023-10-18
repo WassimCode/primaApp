@@ -270,6 +270,13 @@ public class Auto
         return insertedFuel - maxFuelLevel;
 
     }
+    /// <summary>
+    ///  metodo che rallenta la velocità del veicolo, effettua anche i controlli del caso
+    /// </summary>
+    public void Rallenta()
+    {
+
+    }
 
     
 
