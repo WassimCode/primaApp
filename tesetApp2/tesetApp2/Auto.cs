@@ -337,9 +337,10 @@ public class Auto
                 }
                 else
                 {
-                    this.chilometraggio -= amount;
-                    if (this.chilometraggio < 0)
-                        this.chilometraggio = 0;
+                    this.chilometraggio = Math.Max(this.chilometraggio -= amount, 0);
+            //      deprecated
+            //        if (this.chilometraggio < 0)
+            //            this.chilometraggio = 0;
 
                     Console.WriteLine("\n Speed is now : " + this.chilometraggio + ".");
                 }
