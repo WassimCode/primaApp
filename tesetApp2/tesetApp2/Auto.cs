@@ -23,7 +23,7 @@ public class Auto
     protected string colore;
     protected motori tipoMotore;
     protected const int maxFuelLevel = 100;
-    protected int speed;
+    protected int chilometraggio;
 
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
@@ -96,6 +96,8 @@ public class Auto
         result += "\ntipoMotore: " + this.tipoMotore;
 
         result += "\nFuel: " + this.fuel;
+
+        result += "\nSpeed : " + this.chilometraggio;
 
         result += "\nSaved in account fuel: " + this.storedInAccountFuel;
 
@@ -270,6 +272,28 @@ public class Auto
     {
         return insertedFuel - maxFuelLevel;
 
+    }
+    /// <summary>
+    ///  metodo che rallenta la velocità del veicolo, effettua anche i controlli del caso
+    /// </summary>
+    public void rallenta(int amount)
+    {
+        try
+        {
+            if (this.chilometraggio == 0)
+            {
+                Console.WriteLine("\n Car is stopped, you cannot slow down further.");
+            }
+            else
+            {
+                this.chilometraggio -= amount;
+                Console.WriteLine("\n Speed is now : " + this.chilometraggio + ".");
+            }
+        }
+        catch (Exception e)
+        {
+
+        }
     }
 
     /// <summary>
