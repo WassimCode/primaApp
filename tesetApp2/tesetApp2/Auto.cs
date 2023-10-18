@@ -306,6 +306,8 @@ public class Auto
     /// metoddo che aumenta la proprietà velocità della macchina di "amount" chilometri orari
     /// </summary>
     /// <param name="amount"></param>
+    /// 
+    /// 
     public void accelera(int amount)
     {
 
@@ -313,9 +315,10 @@ public class Auto
         this.chilometraggio = this.chilometraggio + amount;
         Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.chilometraggio);
 
-
+        //dsadsda
 
     }
+
     #endregion
 
 }
