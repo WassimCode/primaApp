@@ -288,6 +288,9 @@ public class Auto
             else
             {
                 this.chilometraggio -= amount;
+                if (this.chilometraggio < 0)
+                    this.chilometraggio = 0;
+                
                 Console.WriteLine("\n Speed is now : " + this.chilometraggio + ".");
             }
         }
