@@ -23,7 +23,7 @@ public class Auto
     protected string colore;
     protected motori tipoMotore;
     protected const int maxFuelLevel = 100;
-    protected int chilometraggio;
+    public int chilometraggio;
 
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
