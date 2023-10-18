@@ -13,7 +13,7 @@ namespace testApp2
             //super( marca,  modello,  colore,  tipoMotore,  fuel);
         }
 
-        public AutoInterattiva(string marca, string modello, string colore, motori tipoMotore, int fuel) : base(marca, modello, colore, tipoMotore, fuel)
+        public AutoInterattiva(string marca, string modello, string colore, motori tipoMotore, int fuel, int chilometraggio) : base(marca, modello, colore, tipoMotore, fuel, chilometraggio)
         {
             
         }

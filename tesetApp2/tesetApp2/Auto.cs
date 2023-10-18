@@ -368,8 +368,8 @@ public class Auto
         if (this.fuel <= 0)
         {
             this.fuel = 0;
-            this.turnOff();
             this.chilometraggio = 0;
+            this.turnOff();
             Console.WriteLine("\n You finished you fuel tank! The car is now stopped and the engine is off!");
         }
 
