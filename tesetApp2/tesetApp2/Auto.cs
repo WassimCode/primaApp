@@ -23,14 +23,14 @@ public class Auto
     protected string colore;
     protected motori tipoMotore;
     protected const int maxFuelLevel = 100;
-    private int chilometraggio;
+    public int chilometraggio { get; private set; }
 
 
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
     /// </summary>
     public bool isOn;
-    private int fuel;
+    public int fuel { get; private set; }
 
     public int storedInAccountFuel = 0;
 

@@ -25,7 +25,7 @@ testApp2.AutoInterattiva a3 = new testApp2.AutoInterattiva("Ferrari", "LaFerrari
 
 a3.menu();
 
-
+Console.WriteLine(a3.chilometraggio);
 
 
 
