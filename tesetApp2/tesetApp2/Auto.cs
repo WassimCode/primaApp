@@ -25,6 +25,7 @@ public class Auto
     protected const int maxFuelLevel = 100;
     private int chilometraggio;
 
+
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
     /// </summary>
