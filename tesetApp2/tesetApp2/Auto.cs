@@ -279,8 +279,7 @@ public class Auto
     /// <param name="amount"></param>
     public void rallenta(int amount)
     {
-        if (this.isOn)
-        {
+      
             try
             {
 
@@ -302,10 +301,6 @@ public class Auto
 
             }
         }
-        else
-            Console.WriteLine("\n Car is off, cannot do this operation!");
-       
-    }
 
     /// <summary>
     /// metoddo che aumenta la proprietà velocità della macchina di "amount" chilometri orari
@@ -314,17 +309,20 @@ public class Auto
     public void accelera(int amount)
     {
 
-        if (this.isOn)
-        {
-            this.chilometraggio = this.chilometraggio + amount;
-            Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.chilometraggio);
 
-        }
-        else
-            Console.WriteLine("\n Car is off, cannot do this operation!");
+        this.chilometraggio = this.chilometraggio + amount;
+        Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.chilometraggio);
+
+
+
     }
-
-
-
     #endregion
+
 }
+
+
+
+
+
+
+

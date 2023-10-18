@@ -151,7 +151,7 @@ namespace testApp2
                         Console.Clear();
                         break;
                 }
-            } while (choise != 0);
+            } while (choice != 0);
         }
     }
 }
