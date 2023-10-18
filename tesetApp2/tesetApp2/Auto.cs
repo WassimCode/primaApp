@@ -1,7 +1,7 @@
 ﻿ using System;
 
 namespace testApp2;
-
+// new brnch
 public class Auto
 {
     // Tipi personlizzati
