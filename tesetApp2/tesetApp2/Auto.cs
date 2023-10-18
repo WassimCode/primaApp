@@ -76,24 +76,7 @@ public class Auto
         this.isOn = false;
     }
     #endregion
-    #region " Get and Set Methods "
-    public int getFuel()
-    {
-        return this.fuel;
-    }
-    public int getChilometraggio()
-    {
-        return this.chilometraggio;
-    }
-
-    private void setFuel(int fuel)
-    {
-        this.fuel = fuel;
-    }
-    private void setChilometraggio(int chilometraggio)
-    {
-        this.chilometraggio = chilometraggio;
-    }
+    
     #endregion
     #region "display"
 
