@@ -1,4 +1,3 @@
-
 using testApp2;
 
 namespace TestAuto;
