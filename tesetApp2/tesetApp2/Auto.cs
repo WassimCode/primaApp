@@ -23,16 +23,19 @@ public class Auto
     protected string colore;
     protected motori tipoMotore;
     protected const int maxFuelLevel = 100;
-    public int chilometraggio;
+    private int chilometraggio;
+
 
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
     /// </summary>
     public bool isOn;
-    protected int fuel;
+    private int fuel;
 
     public int storedInAccountFuel = 0;
 
+
+    #region " Constructors "
     /// <summary>
     /// Crea il costruttore
     /// </summary>
@@ -72,7 +75,26 @@ public class Auto
         this.fuel = fuel;
         this.isOn = false;
     }
+    #endregion
+    #region " Get and Set Methods "
+    public int getFuel()
+    {
+        return this.fuel;
+    }
+    public int getChilometraggio()
+    {
+        return this.chilometraggio;
+    }
 
+    private void setFuel(int fuel)
+    {
+        this.fuel = fuel;
+    }
+    private void setChilometraggio(int chilometraggio)
+    {
+        this.chilometraggio = chilometraggio;
+    }
+    #endregion
     #region "display"
 
     public void displayData()

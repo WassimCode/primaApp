@@ -92,6 +92,7 @@ namespace testApp2
                     case 6:
                         Console.Clear();
 
+
                         this.addFuelLevel(10);
                         Console.WriteLine("\nPress enter to go back to the menu...");
                         Console.ReadLine();
