@@ -302,8 +302,8 @@ public class Auto
     /// <param name="amount"></param>
     public void accelera(int amount)
     {
-        this.speed = this.speed + amount;
-        Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.speed);
+        this.chilometraggio = this.chilometraggio + amount;
+        Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.chilometraggio);
     }
 
 
