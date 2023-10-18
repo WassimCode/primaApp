@@ -34,7 +34,7 @@ namespace testApp2
                 Console.WriteLine("\n 4) Show details.");
                 Console.WriteLine("\n 5) Show state.");
                 Console.WriteLine("\n 6) Add fuel.");
-                Console.WriteLine("\n 7) Add custom fuel.");
+                Console.WriteLine("\n 7) Show speed.");
                 Console.WriteLine("\n 8) Speed up.");
                 Console.WriteLine("\n 9) Slow down.");
                 Console.WriteLine("\n 0) Exit.");
@@ -46,7 +46,11 @@ namespace testApp2
                     // Cambia il livello di carburante
                     case 1:
                         Console.Clear();
-                        this.changeFuelLevel();
+
+                        int newFuel = this.addCustomFuelLevel();
+                        Console.Clear();
+
+                        this.addFuelLevel(newFuel);
                         break;
                     // Accendi il veicolo, dopo i dovuti controlli
 
@@ -98,15 +102,12 @@ namespace testApp2
                         Console.ReadLine();
                         break;
 
-                    // Aggiungi carburante al serbatoio in maniera personalizzata
+                    // Mostra la velocità corrente
 
                     case 7:
                         Console.Clear();
 
-                        int newFuel = this.addCustomFuelLevel();
-                        Console.Clear();
-
-                        this.addFuelLevel(newFuel);
+                        Console.WriteLine("\n Current speed: " + this.chilometraggio);
                         Console.WriteLine("\nPress enter to go back to the menu...");
                         Console.ReadLine();
                         break;
@@ -154,5 +155,7 @@ namespace testApp2
                 }
             } while (choice != 0);
         }
+
+
     }
 }
