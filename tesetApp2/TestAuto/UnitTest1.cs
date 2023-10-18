@@ -34,14 +34,11 @@ namespace TestAuto
         public void TestSlowDown()
         {
             // declaring the obj Auto with parameters
-            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10);
+            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10,100);
 
             // turning on the car
             a2.turnOn();
 
-            // setting standard speed
-
-            a2.chilometraggio = 100;
 
             // slowing down
 
@@ -64,8 +61,8 @@ namespace TestAuto
         public void TestSpeedUp()
         {
             // declaring the obj Auto with parameters
-            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10);
-            a2.chilometraggio = 20;
+            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10,20);
+  
             // turning on the car
             a2.accelera(20);
 
@@ -83,11 +80,17 @@ namespace TestAuto
         [TestMethod]
         public void TestFuel() {
             // declaring the obj Auto with parameters
-            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10);
-            a2.chilometraggio = 20;
+            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10, 10);
             // turning on the car
             a2.turnOn();
 
+            a2.accelera(9);
+
+            if(a2.chilometraggio != 0)
+            {
+                //ok
+            }
+            else { throw new Exception("FINITO CARBURANTE"); }
             
         }
     }

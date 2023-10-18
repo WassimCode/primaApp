@@ -74,6 +74,25 @@ public class Auto
         this.tipoMotore = tipoMotore;
         this.fuel = fuel;
         this.isOn = false;
+    }   
+    
+    /// <summary>
+    /// Crea il costruttore, con parametri, della classe Auto
+    /// </summary>
+    /// <param name="marca"></param>
+    /// <param name="modello"></param>
+    /// <param name="colore"></param>
+    /// <param name="tipoMotore"></param>
+    /// <param name="fuel"></param>
+    public Auto(string marca, string modello, string colore, motori tipoMotore, int fuel, int chilometraggio)
+    {
+        this.marca = marca;
+        this.modello = modello;
+        this.colore = colore;
+        this.tipoMotore = tipoMotore;
+        this.fuel = fuel;
+        this.chilometraggio = chilometraggio;
+        this.isOn = false;
     }
     #endregion
     #region " Get and Set Methods "
@@ -214,13 +233,25 @@ public class Auto
     /// </summary>
     public void turnOff()
     {
+        if (!this.isOn) { 
+                Console.WriteLine("Il veicolo è già spento!");
 
-        if (!this.isOn)
-            Console.WriteLine("Il veicolo è già spento!");
+                this.isOn = false;
+            }
         else
-            Console.WriteLine("Il veicolo è stato spento con successo!");
+        {
+      
+            if (this.chilometraggio == 0)
+            {
+                Console.WriteLine("Il veicolo è stato spento con successo!");
+                this.isOn = false;
+            }
+            else
+            {
+                Console.WriteLine("\n You cannot turn off a car that's going! Stop and then turn off the car!");
+            }
+        }
 
-        this.isOn = false;
 
 
 
