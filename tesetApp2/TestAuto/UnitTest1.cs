@@ -78,5 +78,17 @@ namespace TestAuto
             }
 
         }
+
+
+        [TestMethod]
+        public void TestFuel() {
+            // declaring the obj Auto with parameters
+            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10);
+            a2.chilometraggio = 20;
+            // turning on the car
+            a2.turnOn();
+
+            
+        }
     }
 }

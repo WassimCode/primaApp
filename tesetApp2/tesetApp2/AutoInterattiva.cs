@@ -111,7 +111,7 @@ namespace testApp2
                         break;
                      case 8:
                         Console.Clear();
-                        if (this.isOn)
+                        if (this.isOn && (this.fuel > 0))
                         {
                             Console.WriteLine("By how many km/h do you want to accelerate?");
                             int speedUp = Int32.Parse(Console.ReadLine());

@@ -159,7 +159,7 @@ public class Auto
     /// </summary>
     public void turnOn()
     {
-        if (this.fuel == 0)
+        if (this.fuel <= 0)
         {
             Console.WriteLine("\n Impossibile accendere il veicolo - Causa : livello carburante = 0");
             this.isOn = false;
@@ -169,9 +169,21 @@ public class Auto
             if (this.isOn)
                 Console.WriteLine("\nIl veicolo è già acceso!");
             else
+            {
+                // gli passa
+                this.fuel--;
                 Console.WriteLine("\nIl veicolo è partito con successo");
+                this.isOn = true;
 
-            this.isOn = true;
+                if (this.fuel <= 0)
+                {
+                    Console.WriteLine("\n By turning on your veichle, you finished your only fuel left.\n The car now is off and the tank empty.");
+                    this.isOn = false;
+                }
+            }
+
+
+            
         }
     }
 
@@ -311,11 +323,24 @@ public class Auto
     public void accelera(int amount)
     {
 
-
+        // adds speed given by user to the current one
         this.chilometraggio = this.chilometraggio + amount;
         Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.chilometraggio);
 
-        //dsadsda
+        // for issue #2 - consume fuel as much as the speed
+
+        this.fuel -= amount;
+        if (this.fuel <= 0)
+        {
+            this.fuel = 0;
+            this.turnOff();
+            this.chilometraggio = 0;
+            Console.WriteLine("\n You finished you fuel tank! The car is now stopped and the engine is off!");
+        }
+
+
+        Console.ReadLine();
+       
 
     }
 
