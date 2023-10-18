@@ -279,25 +279,32 @@ public class Auto
     /// <param name="amount"></param>
     public void rallenta(int amount)
     {
-        try
+        if (this.isOn)
         {
-            if (this.chilometraggio == 0)
+            try
             {
-                Console.WriteLine("\n Car is stopped, you cannot slow down further.");
-            }
-            else
-            {
-                this.chilometraggio -= amount;
-                if (this.chilometraggio < 0)
-                    this.chilometraggio = 0;
-                
-                Console.WriteLine("\n Speed is now : " + this.chilometraggio + ".");
-            }
-        }
-        catch (Exception e)
-        {
 
+                if (this.chilometraggio == 0)
+                {
+                    Console.WriteLine("\n Car is stopped, you cannot slow down further.");
+                }
+                else
+                {
+                    this.chilometraggio -= amount;
+                    if (this.chilometraggio < 0)
+                        this.chilometraggio = 0;
+
+                    Console.WriteLine("\n Speed is now : " + this.chilometraggio + ".");
+                }
+            }
+            catch (Exception e)
+            {
+
+            }
         }
+        else
+            Console.WriteLine("\n Car is off, cannot do this operation!");
+       
     }
 
     /// <summary>
@@ -306,8 +313,15 @@ public class Auto
     /// <param name="amount"></param>
     public void accelera(int amount)
     {
-        this.chilometraggio = this.chilometraggio + amount;
-        Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.chilometraggio);
+
+        if (this.isOn)
+        {
+            this.chilometraggio = this.chilometraggio + amount;
+            Console.WriteLine("Speed increased by " + amount + " km/h - current speed is now " + this.chilometraggio);
+
+        }
+        else
+            Console.WriteLine("\n Car is off, cannot do this operation!");
     }
 
 
