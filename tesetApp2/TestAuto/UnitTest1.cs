@@ -1,6 +1,7 @@
 using testApp2;
 
-namespace TestAuto;
+namespace TestAuto
+{
 
 
     [TestClass]
@@ -21,41 +22,42 @@ namespace TestAuto;
             // showing the stats to check
             if (a2.showStateOut() == "\nTurned on.") ;
             //ok
-            else {
-            throw new Exception("");
+            else
+            {
+                throw new Exception("");
             }
-            
-         }
 
-
-    [TestMethod]
-    public void TestSlowDown()
-    {
-        // declaring the obj Auto with parameters
-        Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10);
-
-        // turning on the car
-        a2.turnOn();
-
-        // setting standard speed
-
-        a2.chilometraggio = 100;
-
-        // slowing down
-
-        a2.rallenta(80);
-
-        // showing the stats to check
-        if (a2.chilometraggio == 20) ;
-        //ok
-        else
-        {
-            throw new Exception("");
         }
 
-    }
 
-}          
+        [TestMethod]
+        public void TestSlowDown()
+        {
+            // declaring the obj Auto with parameters
+            Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10);
+
+            // turning on the car
+            a2.turnOn();
+
+            // setting standard speed
+
+            a2.chilometraggio = 100;
+
+            // slowing down
+
+            a2.rallenta(80);
+
+            // showing the stats to check
+            if (a2.chilometraggio == 20) ;
+            //ok
+            else
+            {
+                throw new Exception("");
+            }
+
+        }
+
+
 
 
         [TestMethod]
@@ -64,7 +66,7 @@ namespace TestAuto;
             // declaring the obj Auto with parameters
             Auto a2 = new Auto("Ford", "Mustang", "Red", Auto.motori.benzina, 10);
             a2.chilometraggio = 20;
-        // turning on the car
+            // turning on the car
             a2.accelera(20);
 
             // showing the stats to check
@@ -72,8 +74,9 @@ namespace TestAuto;
             //ok
             else
             {
-            throw new Exception("Speed is not synchronized");
+                throw new Exception("Speed is not synchronized");
             }
 
         }
+    }
 }
