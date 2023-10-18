@@ -97,6 +97,8 @@ public class Auto
 
         result += "\nFuel: " + this.fuel;
 
+        result += "\nSpeed : " + this.chilometraggio;
+
         result += "\nSaved in account fuel: " + this.storedInAccountFuel;
 
 
