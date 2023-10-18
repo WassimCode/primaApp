@@ -35,6 +35,8 @@ namespace testApp2
                 Console.WriteLine("\n 5) Show state.");
                 Console.WriteLine("\n 6) Add fuel.");
                 Console.WriteLine("\n 7) Add custom fuel.");
+                Console.WriteLine("\n 8) Speed up.");
+                Console.WriteLine("\n 9) Slow down.");
                 Console.WriteLine("\n 0) Exit.");
                 // converto la stringa di readline in intero
                 choise = Convert.ToInt32(Console.ReadLine());
@@ -107,7 +109,18 @@ namespace testApp2
                         Console.WriteLine("\nPress enter to go back to the menu...");
                         Console.ReadLine();
                         break;
-
+                     case 8:
+                        Console.Clear();
+                        Console.WriteLine("By how many km/h do you want to accelerate?");
+                        int speedUp = Int32.Parse(Console.ReadLine());
+                        this.accelera(speedUp);
+                        break;
+                     case 9:
+                        Console.Clear();
+                        Console.WriteLine("By how many km/h do you want to accelerate?");
+                        int slowDown = Int32.Parse(Console.ReadLine());
+                        this.accelera(slowDown);
+                        break;
                     // Uscita dal menu
 
                     case 0:
