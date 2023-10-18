@@ -77,7 +77,6 @@ public class Auto
     }
     #endregion
     
-    #endregion
     #region "display"
 
     public void displayData()
