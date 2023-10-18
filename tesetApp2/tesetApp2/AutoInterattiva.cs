@@ -21,7 +21,7 @@ namespace testApp2
         public void menu()
         {
             // variabile di controllo
-            int choise;
+            int choice;
 
             // ciclo do while
             do
@@ -39,9 +39,9 @@ namespace testApp2
                 Console.WriteLine("\n 9) Slow down.");
                 Console.WriteLine("\n 0) Exit.");
                 // converto la stringa di readline in intero
-                choise = Convert.ToInt32(Console.ReadLine());
+                choice = Convert.ToInt32(Console.ReadLine());
 
-                switch (choise)
+                switch (choice)
                 {
                     // Cambia il livello di carburante
                     case 1:
