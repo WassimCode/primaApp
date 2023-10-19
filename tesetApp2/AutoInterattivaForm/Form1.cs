@@ -13,6 +13,7 @@ namespace AutoInterattivaForm
             InitializeComponent();
             updateFuelBar(a3.fuel);
             updateGuageBar(a3.chilometraggio);
+            progressBar1.Maximum = testApp2.Auto.maxFuelLevel;
 
         }
 
@@ -155,7 +156,8 @@ namespace AutoInterattivaForm
                     a3.fuel = a3.fuel - 3;
                 }
             }
-
+            updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
         }
     }//
 
