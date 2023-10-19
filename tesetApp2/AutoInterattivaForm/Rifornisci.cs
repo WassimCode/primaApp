@@ -30,7 +30,7 @@ namespace AutoInterattivaForm
         public void addCustomFuel()
         {
 
-
+            this.tempFuel = 0;
             this.tempFuel = Convert.ToInt32(textBox1.Text);
 
 
@@ -40,7 +40,7 @@ namespace AutoInterattivaForm
             }
             else
             {
-                this.tempFuel += Convert.ToInt32(textBox1.Text);
+                this.tempFuel = Convert.ToInt32(textBox1.Text);
                 this.Close();
 
             }
