@@ -30,6 +30,7 @@ namespace AutoInterattivaForm
         private void button1_Click(object sender, EventArgs e)
         {
             value = Convert.ToInt32(numericUpDown1.Value);
+            this.Close();
         }
     }
 }

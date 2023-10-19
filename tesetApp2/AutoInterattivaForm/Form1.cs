@@ -41,7 +41,7 @@ namespace AutoInterattivaForm
         {
             AlterSpeed A = new AlterSpeed("speed up");
             A.ShowDialog();
-            a3.chilometraggio -=
+            a3.chilometraggio += A.value;
         }
 
 
@@ -49,6 +49,7 @@ namespace AutoInterattivaForm
         {
             AlterSpeed A = new AlterSpeed("slow down");
             A.ShowDialog();
+            a3.chilometraggio = Math.Max(a3.chilometraggio -= A.value, 0);
         }
 
         private void button7_Click(object sender, EventArgs e)
