@@ -27,6 +27,10 @@ namespace AutoInterattivaForm
             Rifornisci r1 = new Rifornisci();
             r1.ShowDialog();
             a3.fuel += r1.tempFuel;
+            if (a3.fuel > testApp2.Auto.maxFuelLevel)
+            {
+                a3.fuel = testApp2.Auto.maxFuelLevel;
+            }
             updateFuelBar(a3.fuel);
 
         }
@@ -57,7 +61,7 @@ namespace AutoInterattivaForm
             }
             else
             {
-                OnClosing
+                //OnClosing;
             }
             updateFuelBar(a3.fuel);
 
