@@ -40,9 +40,16 @@ namespace AutoInterattivaForm
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AlterSpeed A = new AlterSpeed("speed up");
-            A.ShowDialog();
-            a3.chilometraggio += A.value;
+            if(a3.isOn)
+            {
+                AlterSpeed A = new AlterSpeed("speed up");
+                A.ShowDialog();
+                a3.chilometraggio += A.value;
+            }
+            else
+            {
+                OnClosing
+            }
             //a3.chilometraggio -=
         }
 
