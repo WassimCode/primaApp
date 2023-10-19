@@ -8,6 +8,9 @@
         private System.ComponentModel.IContainer components = null;
 
         //properties
+        testApp2.AutoInterattiva auto = new testApp2.AutoInterattiva("Ferrari", "LaFerrari", "Rossa", testApp2.Auto.motori.diesel, 20, 20);
+
+
 
         /// <summary>
         ///  Clean up any resources being used.
@@ -20,6 +23,7 @@
                 components.Dispose();
             }
             base.Dispose(disposing);
+
         }
 
         #region Windows Form Designer generated code
