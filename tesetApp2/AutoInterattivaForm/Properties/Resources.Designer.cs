@@ -69,5 +69,15 @@ namespace AutoInterattivaForm.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Cerca una risorsa localizzata di tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bugatti_chiron_Speedometer {
+            get {
+                object obj = ResourceManager.GetObject("bugatti-chiron-Speedometer", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
