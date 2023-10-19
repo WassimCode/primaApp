@@ -31,6 +31,10 @@
         private void InitializeComponent()
         {
             label1 = new Label();
+            label2 = new Label();
+            button1 = new Button();
+            button2 = new Button();
+            label3 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -42,6 +46,42 @@
             label1.TabIndex = 0;
             label1.Text = "Car Commands Page";
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(52, 81);
+            label2.Name = "label2";
+            label2.Size = new Size(291, 20);
+            label2.TabIndex = 1;
+            label2.Text = "Aggiungi q.tà di carburante personalizzata";
+            // 
+            // button1
+            // 
+            button1.Location = new Point(52, 104);
+            button1.Name = "button1";
+            button1.Size = new Size(291, 58);
+            button1.TabIndex = 2;
+            button1.Text = "Apri finestra Carburante";
+            button1.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            button2.Location = new Point(52, 201);
+            button2.Name = "button2";
+            button2.Size = new Size(291, 58);
+            button2.TabIndex = 4;
+            button2.Text = "Apri finestra Carburante";
+            button2.UseVisualStyleBackColor = true;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(52, 178);
+            label3.Name = "label3";
+            label3.Size = new Size(291, 20);
+            label3.TabIndex = 3;
+            label3.Text = "Aggiungi q.tà di carburante personalizzata";
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -49,6 +89,10 @@
             BackgroundImage = Properties.Resources.andrew_tate;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(button2);
+            Controls.Add(label3);
+            Controls.Add(button1);
+            Controls.Add(label2);
             Controls.Add(label1);
             Name = "Form1";
             Text = "Form1";
@@ -59,5 +103,9 @@
         #endregion
 
         private Label label1;
+        private Label label2;
+        private Button button1;
+        private Button button2;
+        private Label label3;
     }
 }
