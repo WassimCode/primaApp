@@ -66,7 +66,7 @@ namespace AutoInterattivaForm
         {
             if (a3.isOn)
             {
-                AlterSpeed A = new AlterSpeed("speed up");
+                AlterSpeed A = new AlterSpeed("accelera");
                 A.ShowDialog();
                 a3.chilometraggio += A.value;
                 a3.fuel = Math.Max(a3.fuel -= A.value, 0);
@@ -85,7 +85,7 @@ namespace AutoInterattivaForm
 
         private void button6_Click(object sender, EventArgs e)
         {
-            AlterSpeed A = new AlterSpeed("slow down");
+            AlterSpeed A = new AlterSpeed("decelera");
             A.ShowDialog();
             a3.chilometraggio = Math.Max(a3.chilometraggio -= A.value, 0);
             updateFuelBar(a3.fuel);

@@ -41,7 +41,10 @@ namespace AutoInterattivaForm
             // Call the base class method first
             base.OnClosing(e);
             string alertText;
-            alertText = "Questa " + choice + "zione ti costerà " + numericUpDown1.Value + "litri di benzina, vuoi procedere?";
+            if(choice == "accelera")
+                alertText = "Questa " + choice + "zione ti costerà " + numericUpDown1.Value + "litri di benzina, vuoi procedere?";
+            else
+                alertText = "Stai per decelerare, vuoi procedere?";
             // Check if the user wants to cancel the closing
             if (MessageBox.Show(alertText, "Certo!", MessageBoxButtons.YesNo) == DialogResult.No)
             {
