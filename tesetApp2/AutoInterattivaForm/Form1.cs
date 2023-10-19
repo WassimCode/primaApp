@@ -9,6 +9,9 @@ namespace AutoInterattivaForm
             InitializeComponent();
         }
 
-
+        private void button5_Click(object sender, EventArgs e)
+        {
+            AlterSpeed A = new AlterSpeed();
+        }
     }
 }

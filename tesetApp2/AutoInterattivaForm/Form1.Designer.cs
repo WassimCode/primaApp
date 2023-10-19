@@ -101,6 +101,7 @@
             button5.TabIndex = 7;
             button5.Text = "Speed Up";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
