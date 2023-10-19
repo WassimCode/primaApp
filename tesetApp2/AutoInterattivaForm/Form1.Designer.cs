@@ -53,6 +53,7 @@
             button1.TabIndex = 2;
             button1.Text = "Aggiungi quantità di carburante personalizzata";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // button2
             // 
@@ -62,6 +63,7 @@
             button2.TabIndex = 4;
             button2.Text = "Rifornisci";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // label3
             // 
@@ -100,6 +102,7 @@
             button5.TabIndex = 7;
             button5.Text = "Speed Up";
             button5.UseVisualStyleBackColor = true;
+            button5.Click += button5_Click;
             // 
             // button6
             // 
