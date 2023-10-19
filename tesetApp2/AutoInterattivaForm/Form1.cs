@@ -42,6 +42,7 @@ namespace AutoInterattivaForm
             AlterSpeed A = new AlterSpeed("speed up");
             A.ShowDialog();
             a3.chilometraggio += A.value;
+            //a3.chilometraggio -=
         }
 
 
