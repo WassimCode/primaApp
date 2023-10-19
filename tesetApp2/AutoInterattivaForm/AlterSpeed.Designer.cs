@@ -37,7 +37,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(372, 26);
+            label1.Location = new Point(248, 24);
             label1.Name = "label1";
             label1.Size = new Size(82, 20);
             label1.TabIndex = 0;
@@ -61,7 +61,7 @@
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
-            // SpeedUp
+            // AlterSpeed
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -71,7 +71,7 @@
             Controls.Add(button1);
             Controls.Add(numericUpDown1);
             Controls.Add(label1);
-            Name = "SpeedUp";
+            Name = "AlterSpeed";
             Text = "Alter speed";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
