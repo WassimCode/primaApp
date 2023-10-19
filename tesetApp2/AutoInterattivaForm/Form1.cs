@@ -23,7 +23,7 @@ namespace AutoInterattivaForm
         {
             Rifornisci r1 = new Rifornisci();
             r1.ShowDialog();
-            a3.fuel = r1.tempFuel;
+            a3.fuel += r1.tempFuel;
         }
 
 
