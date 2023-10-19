@@ -1,4 +1,6 @@
-﻿namespace AutoInterattivaForm
+﻿using testApp2;
+
+namespace AutoInterattivaForm
 {
     partial class Rifornisci
     {
@@ -63,7 +65,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(283, 125);
+            label2.Location = new Point(269, 124);
             label2.Name = "label2";
             label2.Size = new Size(246, 20);
             label2.TabIndex = 3;

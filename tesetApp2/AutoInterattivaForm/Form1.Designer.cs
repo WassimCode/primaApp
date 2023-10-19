@@ -108,6 +108,7 @@
             // 
             // progressBar1
             // 
+            progressBar1.ForeColor = Color.FromArgb(192, 255, 192);
             progressBar1.Location = new Point(505, 409);
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(283, 29);
@@ -118,7 +119,7 @@
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Cambria Math", 13.8F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point);
-            label1.ForeColor = Color.Cyan;
+            label1.ForeColor = Color.FromArgb(192, 255, 192);
             label1.Location = new Point(711, 330);
             label1.Name = "label1";
             label1.Size = new Size(101, 129);
