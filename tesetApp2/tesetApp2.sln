@@ -10,7 +10,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "El
 		Auto.cs = Auto.cs
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAuto", "TestAuto\TestAuto.csproj", "{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAuto", "TestAuto\TestAuto.csproj", "{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "formAuto", "formAuto\formAuto.csproj", "{24124C16-1D64-4370-9AA2-FBE8D18147D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -26,6 +28,10 @@ Global
 		{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9599C30C-8DBF-4C53-8F5C-AFEA632773AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24124C16-1D64-4370-9AA2-FBE8D18147D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24124C16-1D64-4370-9AA2-FBE8D18147D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24124C16-1D64-4370-9AA2-FBE8D18147D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24124C16-1D64-4370-9AA2-FBE8D18147D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
