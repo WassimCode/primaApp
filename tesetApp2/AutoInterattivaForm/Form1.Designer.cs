@@ -158,7 +158,9 @@
             Controls.Add(button2);
             Controls.Add(label3);
             Controls.Add(button1);
+            MinimumSize = new Size(818, 497);
             Name = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Car Commands Page";
             ResumeLayout(false);
             PerformLayout();
