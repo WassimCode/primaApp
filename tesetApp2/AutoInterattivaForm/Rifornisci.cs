@@ -31,8 +31,7 @@ namespace AutoInterattivaForm
         {
 
 
-            int tempFuel;
-            tempFuel = Convert.ToInt32(textBox1.Text);
+            this.tempFuel = Convert.ToInt32(textBox1.Text);
 
 
             if (tempFuel < 0 || tempFuel > testApp2.Auto.maxFuelLevel)
@@ -41,7 +40,7 @@ namespace AutoInterattivaForm
             }
             else
             {
-                tempFuel = Convert.ToInt32(textBox1.Text);
+                this.tempFuel = Convert.ToInt32(textBox1.Text);
                 this.Close();
 
             }
