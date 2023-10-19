@@ -29,25 +29,25 @@ namespace AutoInterattivaForm
 
         public void addCustomFuel()
         {
-            bool check = true;
 
-            while (check) {
-                check = false;
 
-                int tempFuel;
+            int tempFuel;
+            tempFuel = Convert.ToInt32(textBox1.Text);
+
+
+            if (tempFuel < 0 || tempFuel > testApp2.Auto.maxFuelLevel)
+            {
+                label2.Visible = true;
+            }
+            else
+            {
                 tempFuel = Convert.ToInt32(textBox1.Text);
+                this.Close();
 
-          
-                if (tempFuel < 0 || tempFuel > testApp2.Auto.maxFuelLevel)
-                {
-                    label2.Visible = true;
-                    check = true;
-                }
-
-                tempFuel = Convert.ToInt32(textBox1.Text);
             }
 
-            this.Close();
+            
+
 
 
         }
