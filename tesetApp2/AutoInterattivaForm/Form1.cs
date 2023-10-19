@@ -21,7 +21,8 @@ namespace AutoInterattivaForm
         {
             Details d1 = new Details(a3);
             d1.ShowDialog();
-            
+
         }
+
     }
 }
