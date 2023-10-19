@@ -3,7 +3,7 @@ namespace AutoInterattivaForm
     public partial class Form1 : Form
     {
 
-        testApp2.AutoInterattiva a3 = new testApp2.AutoInterattiva("Ferrari", "LaFerrari", "Rossa", testApp2.Auto.motori.diesel, 20, 20, 100);
+        testApp2.AutoInterattiva a3 = new testApp2.AutoInterattiva("Ferrari", "LaFerrari", "Rossa", testApp2.Auto.motori.diesel, 20, 20);
 
         public Form1()
         {
@@ -21,7 +21,9 @@ namespace AutoInterattivaForm
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            Rifornisci r1 = new Rifornisci();
+            r1.ShowDialog();
+            a3.fuel = r1.tempFuel;
         }
 
 

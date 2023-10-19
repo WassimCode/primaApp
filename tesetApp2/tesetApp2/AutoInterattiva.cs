@@ -9,15 +9,15 @@ namespace testApp2
     public class AutoInterattiva : testApp2.Auto
     {
 
-        public int maxFuel {  get; private set; }
+
         public AutoInterattiva()
         {
             //super( marca,  modello,  colore,  tipoMotore,  fuel);
         }
 
-        public AutoInterattiva(string marca, string modello, string colore, motori tipoMotore, int fuel, int chilometraggio, int maxFuel) : base(marca, modello, colore, tipoMotore, fuel, chilometraggio)
+        public AutoInterattiva(string marca, string modello, string colore, motori tipoMotore, int fuel, int chilometraggio) : base(marca, modello, colore, tipoMotore, fuel, chilometraggio)
         {
-            this.maxFuel = maxFuel;
+
         }
 
         public void menu()

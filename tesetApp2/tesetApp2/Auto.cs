@@ -30,7 +30,7 @@ public class Auto
     /// Verifica lo stato di accensione del veicolo
     /// </summary>
     public bool isOn { get; private set; }
-    public int fuel { get; private set; }
+    public int fuel { get;  set; }
 
     public int storedInAccountFuel = 0;
 

@@ -58,6 +58,7 @@
             button1.TabIndex = 2;
             button1.Text = "add";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label2
             // 
@@ -66,7 +67,8 @@
             label2.Name = "label2";
             label2.Size = new Size(246, 20);
             label2.TabIndex = 3;
-            label2.Text = "Please enter a value between 0 and " + autoDetails;
+            label2.Text = "Please enter a value between 0 and ";
+            label2.Visible = false;
             // 
             // Rifornisci
             // 
