@@ -112,7 +112,7 @@
             progressBar1.Name = "progressBar1";
             progressBar1.Size = new Size(283, 29);
             progressBar1.TabIndex = 12;
-            // 
+            // s
             // label1
             // 
             label1.AutoSize = true;
