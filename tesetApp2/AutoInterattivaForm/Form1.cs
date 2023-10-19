@@ -5,7 +5,7 @@ namespace AutoInterattivaForm
     public partial class Form1 : Form
     {
 
-        testApp2.AutoInterattiva a3 = new testApp2.AutoInterattiva("Ferrari", "LaFerrari", "Rossa", testApp2.Auto.motori.diesel, 20, 20);
+        testApp2.AutoInterattiva a3 = new testApp2.AutoInterattiva("Ferrari", "LaFerrari", "Rossa", testApp2.Auto.motori.diesel, 20, 0);
 
         public Form1()
         {
@@ -132,10 +132,29 @@ namespace AutoInterattivaForm
 
         private void timer1_Tick(object sender, EventArgs e)
         {
+            if (a3.fuel < 0)
+            {
+                a3.fuel = 0;
+                a3.turnOff();
+            }
+
+            if (a3.chilometraggio < 0)
+            {
+                a3.chilometraggio = 0;
+                a3.turnOff();
+            }
             if (a3.isOn)
             {
                 a3.rallenta(5);
-                a3.fuel--;
+                if (a3.chilometraggio == 0)
+                {
+                    a3.fuel--;
+                    
+                }
+                else
+                {
+                    a3.fuel = a3.fuel - 3;
+                }
             }
 
         }

@@ -22,7 +22,7 @@ public class Auto
     public string modello { get; private set; }
     public string colore { get; private set; }
     public motori tipoMotore { get; private set; }
-    public const int maxFuelLevel = 100;
+    public const int maxFuelLevel = 300;
     public int chilometraggio { get;  set; }
 
 
