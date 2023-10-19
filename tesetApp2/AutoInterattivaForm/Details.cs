@@ -13,6 +13,8 @@ namespace AutoInterattivaForm
     public partial class Details : Form
     {
 
+        testApp2.Auto autoDetails;
+
         public Details()
         {
             InitializeComponent();
@@ -20,6 +22,7 @@ namespace AutoInterattivaForm
 
         public Details(testApp2.Auto auto)
         {
+            autoDetails = auto;
             InitializeComponent();
         }
     }

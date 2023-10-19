@@ -45,7 +45,7 @@
             label1.Name = "label1";
             label1.Size = new Size(61, 20);
             label1.TabIndex = 0;
-            label1.Text = "Marca : ";
+            label1.Text = "Marca : " + autoDetails.marca;
             // 
             // label2
             // 
@@ -54,7 +54,7 @@
             label2.Name = "label2";
             label2.Size = new Size(76, 20);
             label2.TabIndex = 1;
-            label2.Text = "Modello : ";
+            label2.Text = "Modello : " + autoDetails.modello;
             // 
             // label3
             // 
@@ -63,7 +63,7 @@
             label3.Name = "label3";
             label3.Size = new Size(64, 20);
             label3.TabIndex = 2;
-            label3.Text = "Colore : ";
+            label3.Text = "Colore : " + autoDetails.colore;
             // 
             // label4
             // 
@@ -72,7 +72,7 @@
             label4.Name = "label4";
             label4.Size = new Size(103, 20);
             label4.TabIndex = 3;
-            label4.Text = "Tipo Motore : ";
+            label4.Text = "Tipo Motore : " + autoDetails.tipoMotore;
             // 
             // label5
             // 
@@ -81,7 +81,7 @@
             label5.Name = "label5";
             label5.Size = new Size(93, 20);
             label5.TabIndex = 4;
-            label5.Text = "Carburante : ";
+            label5.Text = "Carburante : " + autoDetails.fuel;
             // 
             // label6
             // 
@@ -90,7 +90,7 @@
             label6.Name = "label6";
             label6.Size = new Size(62, 20);
             label6.TabIndex = 5;
-            label6.Text = "Speed : ";
+            label6.Text = "Speed : " + autoDetails.chilometraggio;
             // 
             // label7
             // 
@@ -99,7 +99,16 @@
             label7.Name = "label7";
             label7.Size = new Size(54, 20);
             label7.TabIndex = 6;
-            label7.Text = "State : ";
+            if (autoDetails.isOn)
+            {
+            label7.Text = "State : On";
+
+            }
+            else
+            {
+            label7.Text = "State : Off";
+
+            }
             // 
             // label8
             // 
@@ -108,7 +117,7 @@
             label8.Name = "label8";
             label8.Size = new Size(165, 20);
             label8.TabIndex = 7;
-            label8.Text = "Fuel stored in account : ";
+            label8.Text = "Fuel stored in account : " + autoDetails.storedInAccountFuel;
             // 
             // Details
             // 

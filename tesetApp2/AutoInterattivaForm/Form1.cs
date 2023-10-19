@@ -14,8 +14,9 @@ namespace AutoInterattivaForm
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Details d1 = new Details();
+            Details d1 = new Details(a3);
             d1.ShowDialog();
+            
         }
     }
 }
