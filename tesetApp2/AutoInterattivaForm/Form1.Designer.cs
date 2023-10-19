@@ -34,7 +34,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
             label2 = new Label();
             button1 = new Button();
             button2 = new Button();
@@ -43,19 +42,10 @@
             button4 = new Button();
             SuspendLayout();
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.Location = new Point(332, 9);
-            label1.Name = "label1";
-            label1.Size = new Size(146, 20);
-            label1.TabIndex = 0;
-            label1.Text = "Car Commands Page";
-            // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(47, 57);
+            label2.Location = new Point(47, 34);
             label2.Name = "label2";
             label2.Size = new Size(291, 20);
             label2.TabIndex = 1;
@@ -63,7 +53,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(47, 80);
+            button1.Location = new Point(47, 57);
             button1.Name = "button1";
             button1.Size = new Size(291, 58);
             button1.TabIndex = 2;
@@ -72,7 +62,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(47, 177);
+            button2.Location = new Point(47, 154);
             button2.Name = "button2";
             button2.Size = new Size(291, 58);
             button2.TabIndex = 4;
@@ -119,16 +109,13 @@
             Controls.Add(label3);
             Controls.Add(button1);
             Controls.Add(label2);
-            Controls.Add(label1);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Car Commands Page";
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Label label1;
         private Label label2;
         private Button button1;
         private Button button2;
