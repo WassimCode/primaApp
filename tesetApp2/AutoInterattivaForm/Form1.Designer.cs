@@ -8,7 +8,6 @@
         private System.ComponentModel.IContainer components = null;
 
         //properties
-        testApp2.AutoInterattiva a3 = new testApp2.AutoInterattiva("Ferrari", "LaFerrari", "Rossa", testApp2.Auto.motori.diesel, 20, 20);
 
 
 
