@@ -87,7 +87,6 @@ namespace AutoInterattivaForm
         {
             AlterSpeed A = new AlterSpeed("decelera");
             A.ShowDialog();
-            updateFuelBar(a3.fuel);
             updateGuageBar(a3.chilometraggio);
 
         }
