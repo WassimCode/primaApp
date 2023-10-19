@@ -115,7 +115,7 @@ namespace AutoInterattivaForm
 
         private void updateGuageBar(int newSpeed)
         {
-           radialGauge1.Value = newSpeed;
+            radialGauge1.Value = newSpeed;
         }
     }
 }
