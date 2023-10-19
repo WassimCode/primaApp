@@ -33,6 +33,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -42,6 +43,7 @@
             progressBar1 = new ProgressBar();
             label1 = new Label();
             radialGauge1 = new Syncfusion.Windows.Forms.Gauge.RadialGauge();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // button2
@@ -167,6 +169,12 @@
             radialGauge1.Value = 20F;
             radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray;
             // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 2000;
+            timer1.Tick += timer1_Tick;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -201,5 +209,6 @@
         private ProgressBar progressBar1;
         private Label label1;
         private Syncfusion.Windows.Forms.Gauge.RadialGauge radialGauge1;
+        private System.Windows.Forms.Timer timer1;
     }
 }
