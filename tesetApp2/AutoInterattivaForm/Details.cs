@@ -34,7 +34,7 @@ namespace AutoInterattivaForm
                 label7.Text = "State : Off";
 
             }
-
+            
         }
     }
 }
