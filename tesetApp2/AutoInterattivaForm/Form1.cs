@@ -16,6 +16,7 @@ namespace AutoInterattivaForm
         {
             AlterSpeed A = new AlterSpeed();
         }
+
         private void button9_Click(object sender, EventArgs e)
         {
             Details d1 = new Details(a3);
