@@ -132,8 +132,12 @@ namespace AutoInterattivaForm
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            a3.rallenta(20);
-            a3.fuel--;
+            if (a3.isOn)
+            {
+                a3.rallenta(5);
+                a3.fuel--;
+            }
+
         }
     }//
 
