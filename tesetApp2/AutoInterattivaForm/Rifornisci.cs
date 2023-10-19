@@ -25,12 +25,12 @@ namespace AutoInterattivaForm
             InitializeComponent();
         }
 
-        public int addCustomFuel(int fuel)
+  /*      public int addCustomFuel(int fuel)
         {
             int tempFuel;
             tempFuel = Convert.ToInt32(Console.ReadLine());
 
-            while (tempFuel < 0 || tempFuel > maxFuelLevel)
+            while (tempFuel < 0 || tempFuel > autoDetails.maxFuelFuel)
             {
                 if (tempFuel < 0 || tempFuel > maxFuelLevel)
                 {
@@ -45,6 +45,6 @@ namespace AutoInterattivaForm
 
             return
         }
-
+  */
     }
 }

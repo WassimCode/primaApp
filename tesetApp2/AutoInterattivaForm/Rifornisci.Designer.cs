@@ -66,7 +66,7 @@
             label2.Name = "label2";
             label2.Size = new Size(246, 20);
             label2.TabIndex = 3;
-            label2.Text = "Please enter a value between 0 and " + autoDetails.;
+            label2.Text = "Please enter a value between 0 and " + autoDetails;
             // 
             // Rifornisci
             // 
