@@ -24,7 +24,7 @@ namespace AutoInterattivaForm
         {
             InitializeComponent();
             this.choice = choice;
-            label1.Text = "Enter by how many km/h you want to " + choice;
+            label1.Text = "Enter by how many km/h you want to " + choice + "re";
         }
 
         private void button1_Click(object sender, EventArgs e)
