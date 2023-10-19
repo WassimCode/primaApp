@@ -41,6 +41,7 @@
             button9 = new Button();
             progressBar1 = new ProgressBar();
             label1 = new Label();
+            radialGauge1 = new Syncfusion.Windows.Forms.Gauge.RadialGauge();
             SuspendLayout();
             // 
             // button2
@@ -126,6 +127,45 @@
             label1.TabIndex = 13;
             label1.Text = "Fuel";
             // 
+            // radialGauge1
+            // 
+            radialGauge1.ArcThickness = 2F;
+            radialGauge1.BackgroundGradientEndColor = Color.FromArgb(192, 64, 0);
+            radialGauge1.BackgroundGradientStartColor = Color.FromArgb(255, 192, 128);
+            radialGauge1.EnableCustomNeedles = false;
+            radialGauge1.FillColor = Color.FromArgb(1, 115, 199);
+            radialGauge1.FrameThickness = 12;
+            radialGauge1.GaugeArcColor = Color.FromArgb(38, 38, 38);
+            radialGauge1.GaugeLabel = "Gauge";
+            radialGauge1.GaugeLableColor = Color.FromArgb(0, 0, 0);
+            radialGauge1.GaugeLableFont = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            radialGauge1.GaugeValueColor = Color.FromArgb(0, 0, 0);
+            radialGauge1.GaugeValueFont = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
+            radialGauge1.InnerFrameGradientEndColor = Color.FromArgb(178, 178, 178);
+            radialGauge1.InnerFrameGradientStartColor = Color.FromArgb(178, 178, 178);
+            radialGauge1.InterLinesColor = Color.FromArgb(61, 61, 61);
+            radialGauge1.Location = new Point(515, 110);
+            radialGauge1.MajorDifference = 50F;
+            radialGauge1.MajorTickMarkColor = Color.FromArgb(61, 61, 61);
+            radialGauge1.MaximumValue = 500F;
+            radialGauge1.MinimumSize = new Size(125, 125);
+            radialGauge1.MinorTickMarkColor = Color.FromArgb(106, 106, 106);
+            radialGauge1.Name = "radialGauge1";
+            radialGauge1.NeedleColor = Color.Red;
+            radialGauge1.NeedleStyle = Syncfusion.Windows.Forms.Gauge.NeedleStyle.Advanced;
+            radialGauge1.OuterFrameGradientEndColor = Color.FromArgb(106, 106, 106);
+            radialGauge1.OuterFrameGradientStartColor = Color.FromArgb(106, 106, 106);
+            radialGauge1.ScaleLabelColor = Color.FromArgb(0, 0, 0);
+            radialGauge1.ShowTicks = true;
+            radialGauge1.Size = new Size(257, 257);
+            radialGauge1.TabIndex = 14;
+            radialGauge1.TextOrientation = Syncfusion.Windows.Forms.Gauge.TextOrientation.SlideOver;
+            radialGauge1.ThemeName = "Office2016DarkGray";
+            radialGauge1.ThemeStyle.ArcThickness = 20F;
+            radialGauge1.TickPlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.OutSide;
+            radialGauge1.Value = 20F;
+            radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -133,6 +173,7 @@
             BackgroundImage = Properties.Resources.andrew_tate;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
+            Controls.Add(radialGauge1);
             Controls.Add(progressBar1);
             Controls.Add(label1);
             Controls.Add(button9);
@@ -158,5 +199,6 @@
         private Button button9;
         private ProgressBar progressBar1;
         private Label label1;
+        private Syncfusion.Windows.Forms.Gauge.RadialGauge radialGauge1;
     }
 }

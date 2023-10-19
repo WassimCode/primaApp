@@ -9,6 +9,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Syncfusion.Gauge.Windows" Version="23.1.41" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\tesetApp2\testApp2.csproj" />
   </ItemGroup>
 

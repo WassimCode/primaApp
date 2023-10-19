@@ -11,6 +11,7 @@ namespace AutoInterattivaForm
 
             InitializeComponent();
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
 
         }
 
@@ -18,6 +19,7 @@ namespace AutoInterattivaForm
         private void button1_Click(object sender, EventArgs e)
         {
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
 
         }
 
@@ -31,6 +33,7 @@ namespace AutoInterattivaForm
                 a3.fuel = testApp2.Auto.maxFuelLevel;
             }
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
 
         }
 
@@ -39,6 +42,7 @@ namespace AutoInterattivaForm
         {
             a3.turnOn();
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
 
         }
 
@@ -46,10 +50,11 @@ namespace AutoInterattivaForm
         {
             a3.turnOff();
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
 
 
         }
-        
+
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -61,10 +66,12 @@ namespace AutoInterattivaForm
             }
             else
             {
-                
+
                 //OnClosing;
             }
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
+
 
         }
 
@@ -75,11 +82,14 @@ namespace AutoInterattivaForm
             A.ShowDialog();
             a3.chilometraggio = Math.Max(a3.chilometraggio -= A.value, 0);
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
 
         }
 
@@ -87,6 +97,7 @@ namespace AutoInterattivaForm
         private void button8_Click(object sender, EventArgs e)
         {
             updateFuelBar(a3.fuel);
+            updateGuageBar(a3.chilometraggio);
 
         }
 
@@ -95,12 +106,17 @@ namespace AutoInterattivaForm
             Details d1 = new Details(a3);
             d1.ShowDialog();
             updateFuelBar(a3.fuel);
-
+            updateGuageBar(a3.chilometraggio);
         }
 
         private void updateFuelBar(int newFuel)
         {
             progressBar1.Value = newFuel;
+        }
+
+        private void updateGuageBar(int newSpeed)
+        {
+           radialGauge1.Value = newSpeed;
         }
     }
 }
