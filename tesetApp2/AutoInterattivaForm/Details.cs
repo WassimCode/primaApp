@@ -24,6 +24,17 @@ namespace AutoInterattivaForm
         {
             autoDetails = auto;
             InitializeComponent();
+            if (autoDetails.isOn)
+            {
+                label7.Text = "State : On";
+
+            }
+            else
+            {
+                label7.Text = "State : Off";
+
+            }
+            
         }
     }
 }

@@ -99,16 +99,8 @@
             label7.Name = "label7";
             label7.Size = new Size(54, 20);
             label7.TabIndex = 6;
-            if (autoDetails.isOn)
-            {
             label7.Text = "State : On";
-
-            }
-            else
-            {
-            label7.Text = "State : Off";
-
-            }
+    
             // 
             // label8
             // 
