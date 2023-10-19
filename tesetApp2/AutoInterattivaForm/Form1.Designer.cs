@@ -33,6 +33,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             button2 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -42,6 +43,7 @@
             progressBar1 = new ProgressBar();
             label1 = new Label();
             radialGauge1 = new Syncfusion.Windows.Forms.Gauge.RadialGauge();
+            timer1 = new System.Windows.Forms.Timer(components);
             SuspendLayout();
             // 
             // button2
@@ -130,29 +132,29 @@
             // radialGauge1
             // 
             radialGauge1.ArcThickness = 2F;
-            radialGauge1.BackgroundGradientEndColor = Color.Black;
-            radialGauge1.BackgroundGradientStartColor = Color.Navy;
+            radialGauge1.BackgroundGradientEndColor = Color.FromArgb(178, 178, 178);
+            radialGauge1.BackgroundGradientStartColor = Color.FromArgb(178, 178, 178);
             radialGauge1.EnableCustomNeedles = false;
             radialGauge1.FillColor = Color.FromArgb(1, 115, 199);
             radialGauge1.ForeColor = Color.White;
             radialGauge1.FrameThickness = 12;
             radialGauge1.GaugeArcColor = Color.FromArgb(38, 38, 38);
             radialGauge1.GaugeLabel = "Km/h";
-            radialGauge1.GaugeLableColor = Color.White;
+            radialGauge1.GaugeLableColor = Color.FromArgb(0, 0, 0);
             radialGauge1.GaugeLableFont = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            radialGauge1.GaugeValueColor = Color.White;
+            radialGauge1.GaugeValueColor = Color.FromArgb(0, 0, 0);
             radialGauge1.GaugeValueFont = new Font("Segoe UI", 8.25F, FontStyle.Regular, GraphicsUnit.Point);
-            radialGauge1.InnerFrameGradientEndColor = Color.White;
-            radialGauge1.InnerFrameGradientStartColor = Color.White;
-            radialGauge1.InterLinesColor = Color.White;
+            radialGauge1.InnerFrameGradientEndColor = Color.FromArgb(178, 178, 178);
+            radialGauge1.InnerFrameGradientStartColor = Color.FromArgb(178, 178, 178);
+            radialGauge1.InterLinesColor = Color.FromArgb(61, 61, 61);
             radialGauge1.Location = new Point(515, 110);
             radialGauge1.MajorDifference = 50F;
-            radialGauge1.MajorTickMarkColor = Color.White;
+            radialGauge1.MajorTickMarkColor = Color.FromArgb(61, 61, 61);
             radialGauge1.MaximumValue = 500F;
             radialGauge1.MinimumSize = new Size(125, 125);
-            radialGauge1.MinorTickMarkColor = Color.Transparent;
+            radialGauge1.MinorTickMarkColor = Color.FromArgb(106, 106, 106);
             radialGauge1.Name = "radialGauge1";
-            radialGauge1.NeedleColor = Color.FromArgb(128, 255, 255);
+            radialGauge1.NeedleColor = Color.FromArgb(1, 115, 199);
             radialGauge1.NeedleStyle = Syncfusion.Windows.Forms.Gauge.NeedleStyle.Advanced;
             radialGauge1.OuterFrameGradientEndColor = Color.FromArgb(106, 106, 106);
             radialGauge1.OuterFrameGradientStartColor = Color.FromArgb(106, 106, 106);
@@ -166,6 +168,12 @@
             radialGauge1.TickPlacement = Syncfusion.Windows.Forms.Gauge.TickPlacement.OutSide;
             radialGauge1.Value = 20F;
             radialGauge1.VisualStyle = Syncfusion.Windows.Forms.Gauge.ThemeStyle.Office2016DarkGray;
+            // 
+            // timer1
+            // 
+            timer1.Enabled = true;
+            timer1.Interval = 2000;
+            timer1.Tick += timer1_Tick;
             // 
             // Form1
             // 
@@ -201,5 +209,6 @@
         private ProgressBar progressBar1;
         private Label label1;
         private Syncfusion.Windows.Forms.Gauge.RadialGauge radialGauge1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

@@ -9,7 +9,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="EO.WebBrowser.WinForm" Version="23.3.60" />
     <PackageReference Include="Syncfusion.Gauge.Windows" Version="23.1.41" />
+    <PackageReference Include="WinForm.MoveControl" Version="1.0.5" />
   </ItemGroup>
 
   <ItemGroup>

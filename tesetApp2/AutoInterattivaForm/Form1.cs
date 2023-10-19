@@ -1,3 +1,5 @@
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Header;
+
 namespace AutoInterattivaForm
 {
     public partial class Form1 : Form
@@ -40,6 +42,9 @@ namespace AutoInterattivaForm
         private void button3_Click(object sender, EventArgs e)
         {
             a3.turnOn();
+            timer1.Enabled = true;
+
+
             updateFuelBar(a3.fuel);
             updateGuageBar(a3.chilometraggio);
 
@@ -48,6 +53,8 @@ namespace AutoInterattivaForm
         private void button4_Click(object sender, EventArgs e)
         {
             a3.turnOff();
+            timer1.Enabled = false;
+
             updateFuelBar(a3.fuel);
             updateGuageBar(a3.chilometraggio);
 
@@ -111,11 +118,21 @@ namespace AutoInterattivaForm
         private void updateFuelBar(int newFuel)
         {
             progressBar1.Value = newFuel;
+            if (newFuel == 0)
+            {
+                timer1.Enabled = false;
+            }
         }
 
         private void updateGuageBar(int newSpeed)
         {
             radialGauge1.Value = newSpeed;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            a3.rallenta(20);
+            a3.fuel--;
         }
     }//
 
