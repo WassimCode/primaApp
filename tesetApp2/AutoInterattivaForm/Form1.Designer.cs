@@ -139,6 +139,7 @@
             button9.TabIndex = 11;
             button9.Text = "Show Details";
             button9.UseVisualStyleBackColor = false;
+            button9.Click += button9_Click;
             // 
             // Form1
             // 

@@ -17,5 +17,10 @@ namespace AutoInterattivaForm
         {
             InitializeComponent();
         }
+
+        public Details(testApp2.Auto auto)
+        {
+            InitializeComponent();
+        }
     }
 }
