@@ -42,7 +42,7 @@ namespace AutoInterattivaForm
             base.OnClosing(e);
 
             // Check if the user wants to cancel the closing
-            if (MessageBox.Show("Vuoi davvero chiudere il form?", "Conferma", MessageBoxButtons.YesNo) == DialogResult.No)
+            if (MessageBox.Show("Questa accelerazione ti costerà " + numericUpDown1.Value + " litri di benzina, procedere?", "Certo, ho i soldi!", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 // Set the Cancel property to true to prevent the form from closing
                 e.Cancel = true;

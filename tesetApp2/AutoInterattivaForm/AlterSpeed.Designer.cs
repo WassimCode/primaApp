@@ -65,9 +65,9 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = Properties.Resources.bugatti_chiron_Speedometer;
-            BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            BackgroundImage = Properties.Resources.Chiron;
+            BackgroundImageLayout = ImageLayout.Center;
+            ClientSize = new Size(786, 427);
             Controls.Add(button1);
             Controls.Add(numericUpDown1);
             Controls.Add(label1);

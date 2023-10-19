@@ -181,7 +181,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = Properties.Resources.andrew_tate;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(982, 503);
             Controls.Add(radialGauge1);
             Controls.Add(progressBar1);
             Controls.Add(label1);
@@ -191,7 +191,7 @@
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
-            MinimumSize = new Size(818, 497);
+            MinimumSize = new Size(1000, 550);
             Name = "Form1";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Car Commands Page";
