@@ -41,7 +41,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(24, 25);
+            label1.Location = new Point(24, 33);
             label1.Name = "label1";
             label1.Size = new Size(61, 20);
             label1.TabIndex = 0;
@@ -50,7 +50,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(24, 57);
+            label2.Location = new Point(24, 84);
             label2.Name = "label2";
             label2.Size = new Size(76, 20);
             label2.TabIndex = 1;
@@ -59,7 +59,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(24, 103);
+            label3.Location = new Point(24, 128);
             label3.Name = "label3";
             label3.Size = new Size(64, 20);
             label3.TabIndex = 2;
@@ -68,7 +68,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(24, 148);
+            label4.Location = new Point(23, 175);
             label4.Name = "label4";
             label4.Size = new Size(103, 20);
             label4.TabIndex = 3;
@@ -77,7 +77,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(25, 178);
+            label5.Location = new Point(23, 222);
             label5.Name = "label5";
             label5.Size = new Size(93, 20);
             label5.TabIndex = 4;
@@ -86,7 +86,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(25, 214);
+            label6.Location = new Point(23, 270);
             label6.Name = "label6";
             label6.Size = new Size(62, 20);
             label6.TabIndex = 5;
@@ -95,7 +95,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(25, 251);
+            label7.Location = new Point(25, 319);
             label7.Name = "label7";
             label7.Size = new Size(54, 20);
             label7.TabIndex = 6;
@@ -104,7 +104,7 @@
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(25, 285);
+            label8.Location = new Point(25, 371);
             label8.Name = "label8";
             label8.Size = new Size(165, 20);
             label8.TabIndex = 7;
