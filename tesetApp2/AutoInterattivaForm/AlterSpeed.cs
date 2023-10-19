@@ -12,7 +12,9 @@ namespace AutoInterattivaForm
 {
     public partial class AlterSpeed : Form
     {
-        string choice;
+        public string choice;
+        // Amount of speed in Km/h to gain/lose
+        public int value;
         public AlterSpeed()
         {
             InitializeComponent();
@@ -27,7 +29,7 @@ namespace AutoInterattivaForm
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            value = Convert.ToInt32(numericUpDown1.Value);
         }
     }
 }

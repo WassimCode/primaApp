@@ -81,7 +81,7 @@
         #endregion
 
         private Label label1;
-        private NumericUpDown numericUpDown1;
+        public NumericUpDown numericUpDown1;
         private Button button1;
     }
 }
