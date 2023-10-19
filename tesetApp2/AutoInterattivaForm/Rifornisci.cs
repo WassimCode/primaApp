@@ -14,6 +14,8 @@ namespace AutoInterattivaForm
     {
         testApp2.Auto autoDetails;
 
+        public int tempFuel;
+
 
         public Rifornisci()
         {
@@ -25,26 +27,34 @@ namespace AutoInterattivaForm
             InitializeComponent();
         }
 
-  /*      public int addCustomFuel(int fuel)
+        public void addCustomFuel()
         {
-            int tempFuel;
-            tempFuel = Convert.ToInt32(Console.ReadLine());
+            bool check = true;
 
-            while (tempFuel < 0 || tempFuel > autoDetails.maxFuelFuel)
-            {
-                if (tempFuel < 0 || tempFuel > maxFuelLevel)
+            while (check) {
+                check = false;
+
+                int tempFuel;
+                tempFuel = Convert.ToInt32(textBox1.Text);
+
+          
+                if (tempFuel < 0 || tempFuel > testApp2.Auto.maxFuelLevel)
                 {
-
+                    label2.Visible = true;
+                    check = true;
                 }
-                Console.WriteLine("\n Insert the level of desired added fuel: ");
-                tempFuel = Convert.ToInt32(Console.ReadLine());
 
-
+                tempFuel = Convert.ToInt32(textBox1.Text);
             }
 
+            this.Close();
 
-            return
+
         }
-  */
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            addCustomFuel();
+        }
     }
 }
