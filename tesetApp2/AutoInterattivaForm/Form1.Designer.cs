@@ -83,6 +83,7 @@
             button3.TabIndex = 5;
             button3.Text = "Turn on";
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -93,6 +94,7 @@
             button4.TabIndex = 6;
             button4.Text = "Turn Off";
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -112,6 +114,7 @@
             button6.TabIndex = 8;
             button6.Text = "Slow Down";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -122,6 +125,7 @@
             button7.TabIndex = 9;
             button7.Text = "Show Speed";
             button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -132,6 +136,7 @@
             button8.TabIndex = 10;
             button8.Text = "Show State";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // button9
             // 

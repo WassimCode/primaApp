@@ -31,6 +31,7 @@
             label1 = new Label();
             textBox1 = new TextBox();
             button1 = new Button();
+            label2 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -58,11 +59,21 @@
             button1.Text = "add";
             button1.UseVisualStyleBackColor = true;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new Point(283, 125);
+            label2.Name = "label2";
+            label2.Size = new Size(246, 20);
+            label2.TabIndex = 3;
+            label2.Text = "Please enter a value between 0 and " + autoDetails.;
+            // 
             // Rifornisci
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
@@ -77,5 +88,6 @@
         private Label label1;
         private TextBox textBox1;
         private Button button1;
+        private Label label2;
     }
 }
