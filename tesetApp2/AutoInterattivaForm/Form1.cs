@@ -4,6 +4,15 @@ namespace AutoInterattivaForm
     {
         public Form1()
         {
+
+
+            InitializeComponent();
+        }
+
+        public Form1(testApp2.Auto auto)
+        {
+
+
             InitializeComponent();
         }
     }
