@@ -10,19 +10,10 @@ using System.Windows.Forms;
 
 namespace AutoInterattivaForm
 {
-    public partial class Details : Form
+    public partial class Rifornisci : Form
     {
-
-        testApp2.Auto autoDetails;
-
-        public Details()
+        public Rifornisci()
         {
-            InitializeComponent();
-        }
-
-        public Details(testApp2.Auto auto)
-        {
-            autoDetails = auto;
             InitializeComponent();
         }
     }

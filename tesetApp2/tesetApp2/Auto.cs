@@ -18,18 +18,18 @@ public class Auto
     /// <summary>
     /// proprietà del veicolo
     /// </summary>
-    protected string marca;
-    protected string modello;
-    protected string colore;
-    protected motori tipoMotore;
-    protected const int maxFuelLevel = 100;
+    public string marca { get; private set; }
+    public string modello { get; private set; }
+    public string colore { get; private set; }
+    public motori tipoMotore { get; private set; }
+    public const int maxFuelLevel = 100;
     public int chilometraggio { get; private set; }
 
 
     /// <summary>
     /// Verifica lo stato di accensione del veicolo
     /// </summary>
-    public bool isOn;
+    public bool isOn { get; private set; }
     public int fuel { get; private set; }
 
     public int storedInAccountFuel = 0;
