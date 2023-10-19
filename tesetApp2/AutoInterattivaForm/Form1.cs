@@ -117,5 +117,6 @@ namespace AutoInterattivaForm
         {
            radialGauge1.Value = newSpeed;
         }
-    }
+    }//
+
 }
