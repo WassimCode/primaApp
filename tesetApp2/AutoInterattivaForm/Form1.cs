@@ -39,13 +39,16 @@ namespace AutoInterattivaForm
 
         private void button5_Click(object sender, EventArgs e)
         {
-            AlterSpeed A = new AlterSpeed();
+            AlterSpeed A = new AlterSpeed("speed up");
+            A.ShowDialog();
+            a3.chilometraggio -=
         }
 
 
         private void button6_Click(object sender, EventArgs e)
         {
-
+            AlterSpeed A = new AlterSpeed("slow down");
+            A.ShowDialog();
         }
 
         private void button7_Click(object sender, EventArgs e)
