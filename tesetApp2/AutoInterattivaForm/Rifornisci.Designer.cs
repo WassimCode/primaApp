@@ -76,11 +76,14 @@ namespace AutoInterattivaForm
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackgroundImage = Properties.Resources.gasstation;
+            BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(800, 450);
             Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(textBox1);
             Controls.Add(label1);
+            DoubleBuffered = true;
             Name = "Rifornisci";
             Text = "Rifornisci";
             ResumeLayout(false);
