@@ -121,9 +121,9 @@
             label1.ForeColor = Color.Cyan;
             label1.Location = new Point(711, 330);
             label1.Name = "label1";
-            label1.Size = new Size(61, 129);
+            label1.Size = new Size(101, 129);
             label1.TabIndex = 13;
-            label1.Text = " ";
+            label1.Text = "Fuel";
             // 
             // Form1
             // 
