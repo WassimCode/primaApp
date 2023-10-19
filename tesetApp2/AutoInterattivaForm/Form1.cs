@@ -62,7 +62,7 @@ namespace AutoInterattivaForm
                 AlterSpeed A = new AlterSpeed("speed up");
                 A.ShowDialog();
                 a3.chilometraggio += A.value;
-                a3.fuel -= A.value;
+                a3.fuel = Math.Max(a3.fuel -= A.value, 0);
             }
             else
             {
