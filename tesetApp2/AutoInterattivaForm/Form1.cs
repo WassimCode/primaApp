@@ -9,11 +9,6 @@ namespace AutoInterattivaForm
             InitializeComponent();
         }
 
-        public Form1(testApp2.Auto auto)
-        {
-
-
-            InitializeComponent();
-        }
+   
     }
 }
