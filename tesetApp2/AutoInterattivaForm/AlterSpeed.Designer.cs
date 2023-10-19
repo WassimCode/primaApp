@@ -1,6 +1,6 @@
 ﻿namespace AutoInterattivaForm
 {
-    partial class SpeedUp
+    partial class AlterSpeed
     {
         /// <summary>
         /// Required designer variable.
@@ -37,11 +37,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(226, 26);
+            label1.Location = new Point(372, 26);
             label1.Name = "label1";
-            label1.Size = new Size(333, 20);
+            label1.Size = new Size(82, 20);
             label1.TabIndex = 0;
-            label1.Text = "By how many Km/h do you want to speed up by?";
+            label1.Text = "Enter value";
             // 
             // numericUpDown1
             // 
@@ -57,7 +57,7 @@
             button1.Name = "button1";
             button1.Size = new Size(333, 61);
             button1.TabIndex = 2;
-            button1.Text = "Speed Up";
+            button1.Text = "Alter Speed";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -72,7 +72,7 @@
             Controls.Add(numericUpDown1);
             Controls.Add(label1);
             Name = "SpeedUp";
-            Text = "SpeedUp";
+            Text = "Alter speed";
             ((System.ComponentModel.ISupportInitialize)numericUpDown1).EndInit();
             ResumeLayout(false);
             PerformLayout();
