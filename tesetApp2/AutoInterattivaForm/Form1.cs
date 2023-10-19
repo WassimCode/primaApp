@@ -13,7 +13,6 @@ namespace AutoInterattivaForm
         }
 
 
-
         private void button1_Click(object sender, EventArgs e)
         {
 
@@ -36,6 +35,7 @@ namespace AutoInterattivaForm
         {
 
         }
+        
 
         private void button5_Click(object sender, EventArgs e)
         {
@@ -47,7 +47,7 @@ namespace AutoInterattivaForm
             }
             else
             {
-                OnClosing
+                
             }
             //a3.chilometraggio -=
         }

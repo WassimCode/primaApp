@@ -32,5 +32,21 @@ namespace AutoInterattivaForm
             value = Convert.ToInt32(numericUpDown1.Value);
             this.Close();
         }
+
+
+
+        // Override the OnClosing method to perform some custom actions
+        protected override void OnClosing(CancelEventArgs e)
+        {
+            // Call the base class method first
+            base.OnClosing(e);
+
+            // Check if the user wants to cancel the closing
+            if (MessageBox.Show("Vuoi davvero chiudere il form?", "Conferma", MessageBoxButtons.YesNo) == DialogResult.No)
+            {
+                // Set the Cancel property to true to prevent the form from closing
+                e.Cancel = true;
+            }
+        }
     }
 }
