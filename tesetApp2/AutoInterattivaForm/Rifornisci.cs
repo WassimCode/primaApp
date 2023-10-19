@@ -40,7 +40,7 @@ namespace AutoInterattivaForm
             }
             else
             {
-                this.tempFuel = Convert.ToInt32(textBox1.Text);
+                this.tempFuel += Convert.ToInt32(textBox1.Text);
                 this.Close();
 
             }
