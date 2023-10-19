@@ -8,7 +8,6 @@ namespace AutoInterattivaForm
         public Form1()
         {
 
-
             InitializeComponent();
             updateFuelBar(a3.fuel);
             updateGuageBar(a3.chilometraggio);
