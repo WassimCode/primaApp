@@ -40,9 +40,10 @@ namespace AutoInterattivaForm
         {
             // Call the base class method first
             base.OnClosing(e);
-
+            string alertText;
+            alertText = "Questa " + choice + "zione ti costerà " + numericUpDown1.Value + "litri di benzina, vuoi procedere?";
             // Check if the user wants to cancel the closing
-            if (MessageBox.Show("Questa accelerazione ti costerà " + numericUpDown1.Value + " litri di benzina, procedere?", "Certo, ho i soldi!", MessageBoxButtons.YesNo) == DialogResult.No)
+            if (MessageBox.Show(alertText, "Certo!", MessageBoxButtons.YesNo) == DialogResult.No)
             {
                 // Set the Cancel property to true to prevent the form from closing
                 e.Cancel = true;
