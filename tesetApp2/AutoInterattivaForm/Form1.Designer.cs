@@ -7,6 +7,8 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+        //properties
+
         /// <summary>
         ///  Clean up any resources being used.
         /// </summary>
